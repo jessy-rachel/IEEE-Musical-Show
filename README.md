@@ -106,8 +106,6 @@ IEEE-Musical-Show/
 
 Each facilitator will maintain their respective folder with Arduino code, circuit diagrams, implementation instructions, and relevant documentation.
 
-The `04-Final-Integration` folder will contain the complete Arduino program combining button inputs, musical note generation, and RGB LED synchronization.
-
 The `Workshop-Resources` folder will contain supporting materials such as presentation slides, circuit diagrams, and simulation references.
 
 ## Development and Collaboration
