@@ -1,4 +1,4 @@
-# IEEE Arduino Rhythm Matrix
+# IEEE Arduino Rhythm Matrix (Musical Show)
 ### Beginner-Friendly Hardware Workshop: Interactive Music and Light Console
 
 **Duration:** 90 minutes  
