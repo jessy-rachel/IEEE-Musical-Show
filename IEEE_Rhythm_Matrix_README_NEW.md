@@ -1,92 +1,129 @@
-# 🎹 IEEE Arduino Rhythm Matrix
-
-### Beginner-Friendly Hardware Workshop | Interactive Music & Light Console
+# IEEE Arduino Rhythm Matrix
+### Beginner-Friendly Hardware Workshop: Interactive Music and Light Console
 
 **Duration:** 90 minutes  
-**Format:** Guided hands-on workshop in teams (target: four groups)  
-**Level:** Beginners — no prior Arduino experience required  
-**Facilitators:** Pranshu · Jeslyn · Shayna
+**Format:** Hands-on workshop in teams (approximately four groups)  
+**Level:** Beginner  
+**Facilitators:** Pranshu, Jeslyn, Shayna
 
 ## Workshop Overview
 
-Build a simple **Arduino-powered musical keyboard** using push buttons, a passive piezo buzzer, and an RGB LED. Participants learn how microcontrollers detect inputs and control outputs, then combine sound and light into a creative mini-performance.
+This workshop introduces participants to Arduino programming and basic electronics through the development of an interactive musical keyboard. Using push buttons, a passive piezo buzzer, and RGB LEDs, participants will learn how a microcontroller processes inputs and controls outputs to generate musical notes and corresponding light effects.
 
-**Final outcome:** Each team demonstrates a working multi-key musical console with LED colors that respond to key presses.
+By the end of the workshop, each team will have developed a functional Arduino-based musical console capable of playing different notes with synchronized LED colors.
 
-## Learning Outcomes
+## Learning Objectives
 
-- Understand Arduino Uno fundamentals, digital inputs and outputs, and basic sensor interfaces.
-- Read push-button input using `digitalRead()` and `INPUT_PULLUP`.
-- Generate musical notes at different frequencies using `tone()` and stop sound with `noTone()`.
-- Synchronize RGB LED colors with button-triggered notes.
-- Customize and present a short musical/light sequence as a team.
+Participants will learn to:
 
-## Workshop Modules & Team Responsibilities
+- Understand basic Arduino concepts, digital inputs and outputs, and sensor interfacing.
+- Detect button presses using `digitalRead()` and `INPUT_PULLUP`.
+- Generate musical notes at different frequencies using the `tone()` function.
+- Control RGB LEDs and synchronize lighting effects with musical notes.
+- Combine individual components into a functional electronic system.
 
-| Module | Facilitator | Focus | Deliverable |
-| --- | --- | --- | --- |
-| **1. Arduino Basics & Inputs** | **Pranshu** | Microcontroller basics, GPIO, push buttons, brief LDR/IR/DHT sensor showcase and LED/buzzer outputs | Buttons detected as digital inputs |
-| **2. Tone Generation** | **Jeslyn** | Passive piezo buzzer, `tone(pin, frequency)`, pitch/frequency, mapping notes to buttons | Each key plays a distinct musical note |
-| **3. RGB LED Light Show** | **Shayna** | RGB LED wiring, color selection, synchronized lighting | Different notes activate distinct colors |
+## Workshop Modules
 
-> **Hardware note:** Use a **passive** piezo buzzer for varying musical pitches; an active buzzer usually produces a fixed pitch. Arduino's standard `tone()` supports **one note at a time**, so simultaneous polyphony is not part of the beginner build.
+### Module 1: Arduino Basics and Inputs
+**Facilitator: Pranshu**
 
-## 90-Minute Agenda
+Introduction to Arduino Uno, microcontrollers, digital and analog pins, and basic electronic components. Participants will explore common sensors such as LDR, IR, and DHT, along with outputs such as LEDs and buzzers.
 
-| Time | Session | Lead |
-| --- | --- | --- |
-| **00:00–00:15** | Quick demo, Arduino fundamentals, buttons & sensor overview | Pranshu |
-| **00:15–00:35** | Connect buzzer; map buttons to musical notes | Jeslyn |
-| **00:35–00:55** | Add synchronized RGB LED effects | Shayna |
-| **00:55–01:15** | **Rhythm Matrix Challenge:** personalize your console | All facilitators |
-| **01:15–01:30** | Team performances, voting & mini-awards | All facilitators |
+The hands-on activity will focus on connecting push buttons to Arduino and detecting user input.
 
-## Optional Challenge: Rhythm Matrix 🏆
+**Outcome:** Participants can successfully read button inputs using Arduino.
 
-Teams get **20 minutes** to create a short, recognizable melody or original beat with synchronized LED colors. Each team then performs for **30–60 seconds**, followed by a quick audience vote.
+### Module 2: Tone Generation
+**Facilitator: Jeslyn**
 
-**Suggested awards:** Best Melody · Best Light Show · Most Creative Team.
+Introduction to sound generation using a passive piezo buzzer. Participants will understand how different frequencies produce musical pitches and use the Arduino `tone()` function to assign musical notes to individual push buttons.
 
-If time and components permit, teams can try advanced extras such as tempo changes, an octave-shift button, a potentiometer to adjust pitch, or a simple prerecorded sequence. These are **optional**, not required for a successful workshop.
+**Outcome:** Each button produces a distinct musical note when pressed.
 
-## Materials & Setup
+### Module 3: RGB LED Light Show
+**Facilitator: Shayna**
 
-**Per group (ideal):**
-- Arduino Uno and compatible USB cable
+Introduction to RGB LEDs, basic color control, and synchronization of outputs. Participants will program the RGB LED to display different colors corresponding to different musical notes.
+
+**Outcome:** The musical keyboard produces synchronized sound and lighting effects.
+
+## Workshop Schedule
+
+| Duration  | Session                   | Activities                                                             | Facilitator      |
+| --------- | ------------------------- | ---------------------------------------------------------------------- | ---------------- |
+| 0–15 min  | Arduino Basics and Inputs | Introduction to Arduino, sensors, outputs, and push-button interfacing | Pranshu          |
+| 15–35 min | Tone Generation           | Buzzer connections, musical frequencies, and mapping notes to buttons  | Jeslyn           |
+| 35–55 min | RGB LED Integration       | RGB LED connections and synchronization of colors with musical notes   | Shayna           |
+| 55–75 min | Team Challenge            | Customizing melodies, rhythms, and lighting effects                    | All Facilitators |
+| 75–90 min | Demonstration and Voting  | Team performances, audience voting, and awards                         | All Facilitators |
+
+## Optional Team Challenge: Rhythm Matrix
+
+After completing the basic circuit, teams will have approximately 20 minutes to develop a short musical performance using their Arduino console.
+
+Each team will demonstrate a recognizable melody or original beat accompanied by synchronized LED effects.
+
+Performances will last approximately 30–60 seconds per team.
+
+Suggested award categories include Best Melody, Best Light Show, and Most Creative Team.
+
+Depending on available time and resources, participants may also explore additional features such as tempo adjustments, octave switching, pitch control using a potentiometer, or programmed melody playback.
+
+## Hardware and Software Requirements
+
+Each group will ideally require:
+
+- Arduino Uno with USB cable
 - Breadboard and jumper wires
-- 3–4 momentary push buttons
-- 1 passive piezo buzzer (electrically suitable for the intended drive circuit)
-- 1 RGB LED and appropriate current-limiting resistors
-- Laptop with Arduino IDE and USB access
+- 3–4 push buttons
+- Passive piezo buzzer
+- RGB LED with current-limiting resistors
+- Laptop with Arduino IDE installed
 
-**Shared:** Projector for demonstrations; optional LDR, IR, and DHT sensors for a short introductory demo; spare components and cables.
+Additional shared resources include a projector, optional LDR, IR, and DHT sensors for demonstration, and spare electronic components.
 
-**Backup setup:** If four physical kits are not available, conduct the guided exercise in **Tinkercad Circuits**, after checking availability of the required simulated components. A single physical demo kit can accompany the simulation.
+If sufficient Arduino kits are unavailable, the workshop may be conducted using Tinkercad Circuits for circuit simulation and programming, subject to verification of component availability. A physical Arduino setup can also be used for live demonstrations.
+
+**Technical consideration:** A passive piezo buzzer is preferred for generating different musical frequencies. The standard Arduino `tone()` function produces one note at a time, which is sufficient for the intended beginner-level project.
 
 ## Repository Structure
 
+The GitHub repository will organize the workshop materials and source code according to each facilitator's responsibilities.
+
 ```text
-IEEE-Arduino-Rhythm-Matrix/
-├── README.md                         # Workshop overview and plan
-├── 01-Pranshu-Arduino-Basics/        # Buttons, sensor demos, input reading
-├── 02-Jeslyn-Tone-Generation/       # Buzzer and musical note mapping
-├── 03-Shayna-RGB-Light-Show/        # RGB light synchronization
-├── 04-Final-Integration/            # Full working keyboard sketch
-└── Workshop-Resources/              # Slides, diagrams, simulation links
+IEEE-Musical-Show/
+│
+├── README.md
+│
+├── 01-Pranshu-Arduino-Basics/
+│
+├── 02-Jeslyn-Tone-Generation/
+│
+├── 03-Shayna-RGB-Light-Show/
+│
+└── Workshop-Resources/
 ```
 
-Each facilitator can upload their **own `.ino` sketches**, diagrams, notes and screenshots inside their folder. The final integrated Arduino sketch can be placed in `04-Final-Integration` once all three modules work together.
+Each facilitator will maintain their respective folder with Arduino code, circuit diagrams, implementation instructions, and relevant documentation.
 
-## Contribution Workflow
+The `04-Final-Integration` folder will contain the complete Arduino program combining button inputs, musical note generation, and RGB LED synchronization.
 
-1. Test your module independently (physical circuit or verified simulation).
-2. Add your code and any wiring diagram to your own folder.
-3. Describe the pins used, wiring instructions, and how to run your `.ino` sketch in the folder's README.
-4. Before integration, agree on the final **shared pin assignment** to avoid conflicts.
-5. Test and document the combined sketch under `04-Final-Integration`.
+The `Workshop-Resources` folder will contain supporting materials such as presentation slides, circuit diagrams, and simulation references.
 
-**Project status:** Workshop proposal and repository structure prepared. Individual module code and wiring plans to be added by facilitators.
+## Development and Collaboration
 
----
+Each facilitator will independently prepare and test their assigned module before integration.
 
-*Prepared for an IEEE student hardware workshop. The agenda and optional challenge are planning targets and can be adapted to available hardware and participant pace.*
+Arduino programs will be uploaded as `.ino` files alongside any required wiring instructions and circuit diagrams.
+
+Before combining the modules, the team will finalize a common Arduino pin configuration to prevent hardware conflicts.
+
+The integrated circuit and program will then be tested to ensure proper operation before the workshop.
+
+## Project Status
+
+The workshop structure, module responsibilities, and proposed schedule have been finalized for preparation.
+
+Individual Arduino programs, circuit diagrams, and final integration will be added as development progresses.
+
+The workshop activities and schedule may be adjusted based on component availability, preparation progress, and participant requirements.
